@@ -1,0 +1,13 @@
+.footerBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3vh;
+}
+
+.footer {
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+}
+
+/*# sourceMappingURL=Footer.module.css.map */
