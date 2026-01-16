@@ -1,6 +1,6 @@
-import SearchIcon from "@mui/icons-material/Search";
-import InputBase from "@mui/material/InputBase";
-import styles from "./SearchBar.module.scss";
+import SearchIcon from '@mui/icons-material/Search';
+import InputBase from '@mui/material/InputBase';
+import styles from './SearchBar.module.scss';
 
 export default function SearchBar() {
   return (

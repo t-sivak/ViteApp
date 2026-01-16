@@ -1,11 +1,17 @@
-import Box from "@mui/material/Box";
-import {ProductCard} from "./searchForm/ProductCard.jsx";
-import styles from "./Content.module.scss";
+import Box from '@mui/material/Box';
+import { ProductCard } from './searchForm/ProductCard.jsx';
+import styles from './Content.module.scss';
+import { useRecoilValue } from 'recoil';
+import { ProductsDataState } from '../../states/ProductsDataState.jsx';
 
 export const Content = () => {
-    return (
-        <Box className={styles.contentContainer}>
-            <ProductCard/>
-        </Box>
-    );
+  const products = useRecoilValue(ProductsDataState);
+
+  return (
+    <Box className={styles.contentContainer}>
+      {products.map((product) => (
+        <ProductCard key={product.id} title={product.title} />
+      ))}
+    </Box>
+  );
 };
