@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":["Content.module.scss"],"names":[],"mappings":"AAAA;EACE;EACA;EACA;EACA","file":"Content.module.css"}
+{"version":3,"sourceRoot":"","sources":["Content.module.scss","../../styles/mixins.scss"],"names":[],"mappings":"AAEA;ECDE;EACA;EACA;EDCA","file":"Content.module.css"}

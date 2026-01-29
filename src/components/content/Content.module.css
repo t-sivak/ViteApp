@@ -1,8 +1,8 @@
 .contentContainer {
+  align-items: center;
+  justify-content: center;
   display: flex;
-  justify-content: space-between;
-  flex-flow: wrap;
-  padding: 2vw;
+  flex-wrap: wrap;
 }
 
 /*# sourceMappingURL=Content.module.css.map */

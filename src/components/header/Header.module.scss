@@ -1,17 +1,12 @@
+@use "../../styles/mixins";
+
 .headerBox {
-  display: flex;
-  justify-content: space-between;
+  @include mixins.space-between;
   background-color: white;
+  height: 10vw;
 }
 
 .iconsGroupBox {
-  display: flex;
-  justify-content: space-between;
-  width: 12vw;
-}
-
-.logoBox {
-  position: relative;
-  width: 26vw;
-  height: 10vw;
+  @include mixins.space-between;
+  width: 14vw;
 }
