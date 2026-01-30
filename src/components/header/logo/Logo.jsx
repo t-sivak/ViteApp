@@ -1,4 +1,4 @@
-import * as styles from './Logo.modules.scss';
+import styles from './Logo.module.scss';
 import Box from '@mui/material/Box';
 
 export const Logo = () => {

@@ -2,11 +2,10 @@ import styles from './Header.module.scss';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
-import IconButton from '@mui/material/IconButton';
-import MenuIcon from '@mui/icons-material/Menu';
-import PermIdentityIcon from '@mui/icons-material/PermIdentity';
 import { Logo } from './logo/Logo.jsx';
-import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+import { ShoppingCart } from './shoppingCart/ShoppingCart.jsx';
+import { Profile } from './profile/Profile.jsx';
+import { Menu } from './menu/Menu.jsx';
 
 export default function Header() {
   return (
@@ -15,15 +14,9 @@ export default function Header() {
         <Toolbar className={styles.headerBox}>
           <Logo />
           <Box className={styles.iconsGroupBox}>
-            <IconButton>
-              <ShoppingCartIcon />
-            </IconButton>
-            <IconButton>
-              <PermIdentityIcon />
-            </IconButton>
-            <IconButton>
-              <MenuIcon />
-            </IconButton>
+            <ShoppingCart />
+            <Profile />
+            <Menu />
           </Box>
         </Toolbar>
       </AppBar>

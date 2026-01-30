@@ -1,6 +1,6 @@
 .cardBox {
   max-width: 11vw;
-  background-color: rgb(255 255 255 / 0.95);
+  background-color: rgba(255, 255, 255, 0.95);
   padding: 2vw;
   margin: 2vw;
   border-radius: 0.5vw;
@@ -9,10 +9,6 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-}
-
-.buttonBox {
-  width: 100%;
 }
 
 .cardDescription {
@@ -25,3 +21,5 @@
 img {
   max-width: 11vw;
 }
+
+/*# sourceMappingURL=ProductCard.module.css.map */
