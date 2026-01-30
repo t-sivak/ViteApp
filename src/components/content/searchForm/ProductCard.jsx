@@ -3,13 +3,14 @@ import Box from '@mui/material/Box';
 import { Button } from '@mui/material';
 
 export const ProductCard = (props) => {
-  console.log(props);
-
+  //console.log(props.product);
   return (
     <Box className={styles.cardBox}>
+      <div>{props.product.title}</div>
+      <img alt="img" src={props.product.images}></img>
+      <div className={styles.cardDescription}>{props.product.description}</div>
       <Box className={styles.buttonBox}>
-        <div>{props.title}</div>
-        <Button className={styles.button} variant="outlined">
+        <Button size="small" className={styles.button} variant="outlined">
           {' '}
           add to cart{' '}
         </Button>

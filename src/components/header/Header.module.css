@@ -2,18 +2,13 @@
   display: flex;
   justify-content: space-between;
   background-color: white;
+  height: 10vw;
 }
 
 .iconsGroupBox {
   display: flex;
   justify-content: space-between;
-  width: 12vw;
-}
-
-.logoBox {
-  position: relative;
-  width: 26vw;
-  height: 10vw;
+  width: 14vw;
 }
 
 /*# sourceMappingURL=Header.module.css.map */

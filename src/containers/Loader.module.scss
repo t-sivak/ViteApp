@@ -1,0 +1,6 @@
+@use "../styles/mixins";
+
+.loader {
+  height: 100vh;
+  @include mixins.flex-center;
+}

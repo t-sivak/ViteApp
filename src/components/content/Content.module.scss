@@ -1,6 +1,6 @@
+@use '../../styles/mixins';
+
 .contentContainer {
-  display: flex;
-  justify-content: space-between;
-  flex-flow: wrap;
-  padding: 2vw;
+  @include mixins.flex-center;
+  flex-wrap: wrap;
 }

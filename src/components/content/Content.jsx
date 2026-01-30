@@ -10,7 +10,7 @@ export const Content = () => {
   return (
     <Box className={styles.contentContainer}>
       {products.map((product) => (
-        <ProductCard key={product.id} title={product.title} />
+        <ProductCard key={product.id} product={product} />
       ))}
     </Box>
   );
