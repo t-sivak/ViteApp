@@ -1,5 +1,5 @@
 import Box from '@mui/material/Box';
-import { ProductCard } from './searchForm/ProductCard.jsx';
+import { ProductCard } from './productCard/ProductCard.jsx';
 import styles from './Content.module.scss';
 import { useRecoilValue } from 'recoil';
 import { ProductsDataState } from '../../states/ProductsDataState.jsx';
