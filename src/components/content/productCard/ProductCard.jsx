@@ -7,23 +7,15 @@ export const ProductCard = ({ product }) => {
     ? product.images[0]
     : product.images;
 
-  const productId = product.id;
-  const productName = product.title;
-  const productDescription = product.description;
-  const productPrice = product.price;
+  const { id, title, description, price } = product;
 
   return (
-    <Box className={styles.productBox} id={productId}>
-      <Box>{productName}</Box>
+    <Box className={styles.productBox} id={id}>
+      <Box>{title}</Box>
       <img alt="img" src={productImgUrl}></img>
-      <Box className={styles.productDescription}>{productDescription}</Box>
-      <Box className={styles.productPrice}>price: {productPrice}$</Box>
-      <AddToCartButton
-        id={productId}
-        name={productName}
-        description={productDescription}
-        price={productPrice}
-      />
+      <Box className={styles.productDescription}>{description}</Box>
+      <Box className={styles.productPrice}>price: {price}$</Box>
+      <AddToCartButton product={product} />
     </Box>
   );
 };
